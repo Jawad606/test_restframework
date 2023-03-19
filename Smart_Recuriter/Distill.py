@@ -6,11 +6,13 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 # Define english stopwords
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 stop_words = stopwords.words('english')
 
 # load the spacy module and create a nlp object
 # This need the spacy en module to be present on the system.
-nlp = spacy.load('en_core_web_sm')
+# nlp = spacy.load('en_core_web_sm')
 # proces to remove stopwords form a file, takes an optional_word list
 # for the words that are not present in the stop words but the user wants them deleted.
 
