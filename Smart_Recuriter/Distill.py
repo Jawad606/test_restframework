@@ -4,7 +4,7 @@ import re
 
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
-
+nltk.download('stopwords')
 # Define english stopwords
 stop_words = stopwords.words('english')
 
